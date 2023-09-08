@@ -16,8 +16,8 @@ class JavascriptInterface(
     context: Context,
     type: String,
     label: String,
-    data: String
-
+    data: String,
+    labelTitle: String
 ) {
     companion object {
         const val TAG_HANDLER = "Android"
@@ -25,6 +25,7 @@ class JavascriptInterface(
     private val mType = type
     private val mLabel = label
     private val mData = data
+    private val mLabelTitle = labelTitle
 
 
     @JavascriptInterface
@@ -40,6 +41,11 @@ class JavascriptInterface(
     @JavascriptInterface
     fun getData(): String {
         return mData.toString()
+    }
+
+    @JavascriptInterface
+    fun getLabelTitle(): String {
+        return mLabelTitle
     }
 
 

@@ -9,9 +9,10 @@ email : septiawanajipradana@gmail.com
 website : dewakoding.com
 
  **/
-class CommonConst {
+class ChartType {
     companion object {
-        val CHART_JS_BAR = "bar"
-        val CHART_JS_LINE = "line"
+        val BAR = "bar"
+        val LINE = "line"
+        val PIE = "pie"
     }
 }

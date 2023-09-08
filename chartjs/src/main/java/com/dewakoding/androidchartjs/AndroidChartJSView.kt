@@ -30,9 +30,8 @@ class AndroidChartJSView  @JvmOverloads constructor(
         webView = WebView(context)
     }
 
-    fun setChart(type: String,label: Array<String>, data: Array<Int>) {
-
-        jsi = JavascriptInterface(getContext(), type, Gson().toJson(label) , Gson().toJson(data))
+    fun setChart(type: String,label: Array<String>, data: Array<Int>, labelTitle: String) {
+        jsi = JavascriptInterface(getContext(), type, Gson().toJson(label) , Gson().toJson(data), labelTitle)
         val webSettings: WebSettings = webView.getSettings()
         webSettings.javaScriptEnabled = true
         webView.addJavascriptInterface(jsi!!, JavascriptInterface.TAG_HANDLER)
