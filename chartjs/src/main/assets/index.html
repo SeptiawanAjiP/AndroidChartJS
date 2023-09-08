@@ -16,13 +16,13 @@
       const ctx = document.getElementById("myChart");
 
       new Chart(ctx, {
-        type: "bar",
+        type: Android.getType(),
         data: {
-          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+          labels: JSON.parse(Android.getLabel()),
           datasets: [
             {
               label: "# of Votes",
-              data: [12, 19, 3, 5, 2, 3],
+              data: JSON.parse(Android.getData()),
               borderWidth: 1,
             },
           ],
