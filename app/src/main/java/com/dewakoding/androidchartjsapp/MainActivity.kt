@@ -12,7 +12,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.androidChart.setChart(ChartType.PIE, arrayOf("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"), arrayOf(10, 3, 5, 8, 9), "of Orders")
+        binding.androidChart1.setChart(
+            ChartType.PIE,
+            arrayOf("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"),
+            arrayOf(10, 3, 5, 8, 9),
+            "of quantity")
+        binding.androidChart2.setChart(
+            ChartType.BAR,
+            arrayOf("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"),
+            arrayOf(10, 3, 5, 8, 9),
+            "of quantity")
     }
 
 }

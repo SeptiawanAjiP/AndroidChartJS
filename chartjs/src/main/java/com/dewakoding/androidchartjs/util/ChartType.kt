@@ -14,5 +14,8 @@ class ChartType {
         val BAR = "bar"
         val LINE = "line"
         val PIE = "pie"
+        val DOUGHNUT = "doughnut"
+        val POLAR_AREA = "polarArea"
+        val BUBBLE = "radar"
     }
 }
