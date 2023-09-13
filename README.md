@@ -56,4 +56,4 @@ binding.androidChart1.setChart(
 - [x] Pie Chart
 - [x] Doughnut Chart
 - [x] Polar Area
-- [ ] Bar Chart
+- [ ] Bubble Chart
