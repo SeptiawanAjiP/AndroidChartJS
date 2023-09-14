@@ -17,5 +17,6 @@ class ChartType {
         val DOUGHNUT = "doughnut"
         val POLAR_AREA = "polarArea"
         val BUBBLE = "radar"
+        val RADAR = "radar"
     }
 }
