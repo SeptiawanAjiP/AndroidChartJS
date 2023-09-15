@@ -1,46 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-   <TextView
-       android:id="@+id/tv_title_1"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintLeft_toLeftOf="parent"
-       android:text="Pie Chart"
-       android:textSize="24sp"
-       android:textStyle="bold"
-       android:layout_marginLeft="16dp"
-       android:layout_marginTop="16dp"/>
-   <com.dewakoding.androidchartjs.AndroidChartJSView
-       android:id="@+id/android_chart_1"
+   <LinearLayout
        android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       app:layout_constraintLeft_toLeftOf="parent"
-       app:layout_constraintRight_toRightOf="parent"
-       app:layout_constraintTop_toBottomOf="@id/tv_title_1"/>
-   <TextView
-       android:id="@+id/tv_title_2"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       app:layout_constraintTop_toBottomOf="@id/android_chart_1"
-       app:layout_constraintLeft_toLeftOf="parent"
-       android:text="Bar Chart"
-       android:textSize="24sp"
-       android:textStyle="bold"
-       android:layout_marginLeft="16dp"
-       android:layout_marginTop="16dp"/>
-   <com.dewakoding.androidchartjs.AndroidChartJSView
-       android:id="@+id/android_chart_2"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       app:layout_constraintTop_toBottomOf="@id/tv_title_2"
-       app:layout_constraintLeft_toLeftOf="parent"/>
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+      <TextView
+          android:id="@+id/tv_title_1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Bar Chart"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="16dp"/>
+
+      <com.dewakoding.androidchartjs.AndroidChartJSView
+          android:id="@+id/android_chart_1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/tv_title_1"/>
+
+      <TextView
+          android:id="@+id/tv_title_2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Line Chart"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="16dp"/>
+      <com.dewakoding.androidchartjs.AndroidChartJSView
+          android:id="@+id/android_chart_2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/tv_title_2"
+          app:layout_constraintLeft_toLeftOf="parent"/>
+      <TextView
+          android:id="@+id/tv_title_3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Pie Chart"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="16dp"/>
+      <com.dewakoding.androidchartjs.AndroidChartJSView
+          android:id="@+id/android_chart_3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/tv_title_2"
+          app:layout_constraintLeft_toLeftOf="parent"/>
+      <TextView
+          android:id="@+id/tv_title_4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Doughnut Chart"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="16dp"/>
+      <com.dewakoding.androidchartjs.AndroidChartJSView
+          android:id="@+id/android_chart_4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/tv_title_2"
+          app:layout_constraintLeft_toLeftOf="parent"/>
+      <TextView
+          android:id="@+id/tv_title_5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Doughnut Chart"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="16dp"/>
+      <com.dewakoding.androidchartjs.AndroidChartJSView
+          android:id="@+id/android_chart_5"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/tv_title_2"
+          app:layout_constraintLeft_toLeftOf="parent"/>
+   </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

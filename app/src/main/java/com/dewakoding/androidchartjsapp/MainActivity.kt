@@ -13,12 +13,27 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.androidChart1.setChart(
-            ChartType.RADAR,
+            ChartType.BAR,
             arrayOf("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"),
             arrayOf(10, 3, 5, 8, 9),
             "of quantity")
         binding.androidChart2.setChart(
-            ChartType.BAR,
+            ChartType.LINE,
+            arrayOf("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"),
+            arrayOf(10, 3, 5, 8, 9),
+            "of quantity")
+        binding.androidChart3.setChart(
+            ChartType.PIE,
+            arrayOf("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"),
+            arrayOf(10, 3, 5, 8, 9),
+            "of quantity")
+        binding.androidChart4.setChart(
+            ChartType.DOUGHNUT,
+            arrayOf("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"),
+            arrayOf(10, 3, 5, 8, 9),
+            "of quantity")
+        binding.androidChart5.setChart(
+            ChartType.POLAR_AREA,
             arrayOf("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"),
             arrayOf(10, 3, 5, 8, 9),
             "of quantity")
