@@ -76,7 +76,7 @@
           android:id="@+id/tv_title_5"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Doughnut Chart"
+          android:text="Polar Area"
           android:textSize="24sp"
           android:textStyle="bold"
           android:layout_marginLeft="16dp"
