@@ -36,7 +36,7 @@ class AndroidChartJSView  @JvmOverloads constructor(
         webSettings.javaScriptEnabled = true
         webView.addJavascriptInterface(jsi!!, JavascriptInterface.TAG_HANDLER)
         webView.setWebChromeClient(WebChromeClient())
-        webView.loadUrl("file:///android_asset/index.html")
+        webView.loadUrl("file:///android_asset/chart2023.html")
         addView(webView)
     }
 }
