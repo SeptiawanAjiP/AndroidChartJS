@@ -49,6 +49,15 @@ binding.androidChart1.setChart(
             arrayOf("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"),
             arrayOf(10, 3, 5, 8, 9),
             "of quantity")
+
+// set bubble chart
+ binding.androidChart1.setBubbleChart(
+            arrayOf(
+                BubbleEntity(10,20,30),
+                BubbleEntity(25, 45, 20),
+                BubbleEntity(15, 25, 5)
+            ),
+            "of quantity")
 ```
 ### Chart Types
 - [x] Bar Chart
@@ -57,4 +66,4 @@ binding.androidChart1.setChart(
 - [x] Doughnut Chart
 - [x] Polar Area
 - [x] Radar
-- [ ] Bubble Chart
+- [x] Bubble Chart
