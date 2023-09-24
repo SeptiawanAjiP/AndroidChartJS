@@ -15,7 +15,7 @@ website : dewakoding.com
 class JavascriptInterface(
     context: Context,
     type: String,
-    label: String,
+    label: String?,
     data: String,
     labelTitle: String
 ) {
@@ -40,7 +40,7 @@ class JavascriptInterface(
 
     @JavascriptInterface
     fun getData(): String {
-        return mData.toString()
+        return mData
     }
 
     @JavascriptInterface

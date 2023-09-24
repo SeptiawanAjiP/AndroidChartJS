@@ -7,6 +7,7 @@ import android.webkit.WebChromeClient
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.widget.LinearLayout
+import com.dewakoding.androidchartjs.model.BubbleEntity
 import com.google.gson.Gson
 import java.io.BufferedReader
 import java.io.IOException
@@ -37,6 +38,15 @@ class AndroidChartJSView  @JvmOverloads constructor(
 
     fun setChart(type: String,label: Array<String>, data: Array<Int>, labelTitle: String) {
         jsi = JavascriptInterface(getContext(), type, Gson().toJson(label) , Gson().toJson(data), labelTitle)
+        render(jsi)
+    }
+
+    fun setBubbleChart(data: Array<BubbleEntity>, labelTitle: String) {
+        jsi = JavascriptInterface(context, "bubble", null, Gson().toJson(data), labelTitle)
+        render(jsi)
+    }
+
+    private fun render(jsi: JavascriptInterface?) {
         val webSettings: WebSettings = webView.getSettings()
         webSettings.javaScriptEnabled = true
         webView.addJavascriptInterface(jsi!!, JavascriptInterface.TAG_HANDLER)
@@ -47,6 +57,7 @@ class AndroidChartJSView  @JvmOverloads constructor(
         val htmlData = convertStreamToString(inputStream)
         val baseUrl = "file:///android_res/raw/"
         val dataUri = Uri.parse(baseUrl + rawResourceId)
+
 
         webView.loadDataWithBaseURL(baseUrl, htmlData, "text/html", "UTF-8", null)
 

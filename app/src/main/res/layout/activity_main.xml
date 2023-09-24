@@ -87,6 +87,21 @@
           android:layout_height="wrap_content"
           app:layout_constraintTop_toBottomOf="@id/tv_title_2"
           app:layout_constraintLeft_toLeftOf="parent"/>
+      <TextView
+          android:id="@+id/tv_title_6"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Bubble Chart"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="16dp"/>
+      <com.dewakoding.androidchartjs.AndroidChartJSView
+          android:id="@+id/android_chart_6"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/tv_title_2"
+          app:layout_constraintLeft_toLeftOf="parent"/>
    </LinearLayout>
 
 
