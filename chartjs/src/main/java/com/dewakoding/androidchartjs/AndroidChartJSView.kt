@@ -70,7 +70,7 @@ class AndroidChartJSView  @JvmOverloads constructor(
         var line: String?
         try {
             while (reader.readLine().also { line = it } != null) {
-                stringBuilder.append(line)
+                stringBuilder.append(line).append("\n")
             }
         } catch (e: IOException) {
             e.printStackTrace()
